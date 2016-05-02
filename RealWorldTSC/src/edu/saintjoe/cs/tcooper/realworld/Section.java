@@ -1,11 +1,16 @@
 package edu.saintjoe.cs.tcooper.realworld;
 
 public class Section {
-	String room;
-	String time;
-	String title;
-	Student[] roster;
+	public String room;
+	public String time;
+	public String title;
+	public String teacher;
+	public Student[] roster;
 /*----------------------------------------------------------------------------*/
+	public Section (String newRoom, String newTime, String newTitle, String newTeacher){
+		
+	}
+
 	public void setRoom(String newRoom){
 		room = newRoom;
 	}
@@ -25,6 +30,13 @@ public class Section {
 	}
 	public String newTitle(){
 		return title;
+	}
+	
+	public void setTeacher(String newTeacher){
+		title = newTeacher;
+	}
+	public String newTeacher(){
+		return teacher;
 	}
 	
 }

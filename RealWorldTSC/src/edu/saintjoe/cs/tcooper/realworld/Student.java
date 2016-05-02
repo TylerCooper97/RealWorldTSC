@@ -1,10 +1,10 @@
 package edu.saintjoe.cs.tcooper.realworld;
 
 public class Student {
-	String name;
-	int age;
-	String gender;
-	int gradeYear;
+	private String name;
+	private int age;
+	private String gender;
+	private int gradeYear;
 /*----------------------------------------------------------------------------*/
 	public void setName(String newName){
 		name = newName;
@@ -32,5 +32,9 @@ public class Student {
 	}
 	public int getGradeYear(){
 		return gradeYear;
+	}
+	
+	public String toString(){
+		return ("Student: " + name + " Gender: " + gender + " Class Year: " + gradeYear + " Age: " + age);
 	}
 }
